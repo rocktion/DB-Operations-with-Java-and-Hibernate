@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-configuration PUBLIC
+    "-//Hibernate/Hibernate Configuration DTD 3.0//EN"
+    "http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd">
+
+<hibernate-configuration>
+
+    <session-factory>
+
+        <!-- Veritabanı bağlantı ayarları -->
+        <property name="hibernate.connection.driver_class">org.postgresql.Driver</property>
+        <property name="hibernate.connection.url">jdbc:postgresql://localhost:5432/task1</property>
+        <property name="hibernate.connection.username">postgres</property>
+        <property name="hibernate.connection.password">asd35356</property>
+
+        <!-- Hibernate için diğer yapılandırma ayarları -->
+        <property name="hibernate.dialect">org.hibernate.dialect.PostgreSQLDialect</property>
+        <property name="hibernate.show_sql">true</property>
+        <property name="hibernate.format_sql">true</property>
+        <property name="hibernate.hbm2ddl.auto">update</property>
+
+        <!-- Veritabanı bağlantı havuzu ayarları -->
+        <property name="hibernate.connection.pool_size">10</property>
+        <property name="hibernate.connection.pool_type">c3p0</property>
+        <property name="hibernate.c3p0.min_size">5</property>
+        <property name="hibernate.c3p0.max_size">20</property>
+        <property name="hibernate.c3p0.timeout">300</property>
+        <property name="hibernate.c3p0.max_statements">50</property>
+        <property name="hibernate.c3p0.idle_test_period">3000</property>
+        <property name="hibernate.current_session_context_class">thread</property>
+
+        <!-- Entity sınıfları için kaynak konfigürasyonu -->
+        <mapping class="task1maven.model.Account"/>
+        <mapping class="task1maven.model.Address"/>
+        <mapping class="task1maven.model.Customer"/>
+        <mapping class="task1maven.model.Phone"/>
+
+    </session-factory>
+
+</hibernate-configuration>

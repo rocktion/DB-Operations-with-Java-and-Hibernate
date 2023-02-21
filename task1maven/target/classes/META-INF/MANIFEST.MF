@@ -1,0 +1,19 @@
+Manifest-Version: 1.0
+Build-Jdk-Spec: 17
+Specification-Title: Hibernate Tools Maven Plugin
+Specification-Version: 5.6
+Specification-Vendor: Hibernate
+Implementation-Title: Hibernate Tools Maven Plugin
+Implementation-Version: 5.6.15.Final
+Implementation-Vendor: Hibernate
+Created-By: Maven Integration for Eclipse
+Implementation-URL: https://hibernate.github.io/hibernate-tools/
+Java-Vendor: Oracle Corporation
+Java-Version: 17.0.6
+Os-Arch: amd64
+Os-Name: Windows 10
+Os-Version: 10.0
+Scm-Connection: scm:git:git://github.com/hibernate/hibernate-tools.git
+Scm-Revision: 
+Scm-Url: http://github.com/hibernate/hibernate-tools
+
